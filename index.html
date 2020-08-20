@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide Me: Quote Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/Footer-Dark.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top">
+        <a class="navbar-brand" href="./index.html">Quote Genrator</a>
+        <a href="/about.html" class="navbar-item">About</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 description">
+            <h2 class="head1">
+              QGenerator: Custome Quotes for you!
+            </h2>
+          </div>
+          <div class="col-12 shadow py-2">
+            <p class="mb-4 pt-2 font-weight-bold">
+              Select the Type of Quotes:
+            </p>
+            <div class="btn-group pt-2 btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="qType" value="music" checked />
+                Music
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="qType" value="history" />
+                History
+              </label>
+            </div>
+          </div>
+          <div
+            style="text-align: center;"
+            class="col-md-12 col-lg-4 shadow-lg pt-3"
+          >
+            <p class="mb-4 font-weight-bold py-2 text-left">
+              Select the Number of Quotes:
+            </p>
+            <div class="range-wrap">
+              <div class="range-value" id="rangeV"></div>
+              <input
+                id="range"
+                type="range"
+                min="1"
+                max="5"
+                value="1"
+                step="1"
+              />
+            </div>
+          </div>
+          <div class="col-12 my-2 py-4">
+            <button
+              style="font-size: large;"
+              id="qGenrator"
+              class="btn btn-outline-info"
+            >
+              QGenerate
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="table-responsive">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col-1 col-md-1">Number:</th>
+                    <th scope="col-9 col-md-9">Quote</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <!-- Start: Services -->
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Hosting</a></li>
+              </ul>
+            </div>
+            <!-- End: Services -->
+            <!-- Start: About -->
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">+201205175195</a></li>
+                <li><a href="#">latifekhaliel@gmail.com</a></li>
+              </ul>
+            </div>
+            <!-- End: About -->
+            <!-- Start: Social Icons -->
+            <div class="col item social">
+              <a
+                target="blanck"
+                data-bs-hover-animate="wobble"
+                href="https://www.facebook.com/LatifEssam/"
+                ><i class="fab fa-facebook"></i></a
+              ><a
+                target="blanck"
+                data-bs-hover-animate="wobble"
+                href="https://twitter.com/latif_essam"
+                ><i class="fab fa-twitter"></i></a
+              ><a
+                target="blanck"
+                data-bs-hover-animate="wobble"
+                href="https://www.linkedin.com/in/latifessam/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                target="blanck"
+                data-bs-hover-animate="wobble"
+                href="https://github.com/latif-essam"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <!-- End: Social Icons -->
+          </div>
+          <!-- Start: Copyright -->
+          <p class="copyright" style="opacity: 0.88;">Latif Essam © 2020</p>
+          <!-- End: Copyright -->
+        </div>
+      </footer>
+    </div>
+    <!-- fint-awsom icons -->
+    <script
+      src="https://kit.fontawesome.com/a52c8e7de1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Javascript/CusomeQuotes.js"></script>
+    <script src="./Javascript/RandomQuotes.js"></script>
+    <!-- page scripts -->
+    <script src="./Javascript/range.js"></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

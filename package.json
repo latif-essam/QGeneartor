@@ -1,0 +1,28 @@
+{
+  "name": "qgenerator",
+  "version": "1.0.0",
+  "description": "Guide Me: Quote Generator is a simple web app that randomly generate quotes for you, depending on the quote the user select and how many quotes to generate each time",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latif-essam/QGeneartor.git"
+  },
+  "keywords": [
+    "Quote",
+    "Quote",
+    "Generator",
+    "QGen",
+    "QGenerator",
+    "Q",
+    "Generator"
+  ],
+  "author": "Latif Essam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latif-essam/QGeneartor/issues"
+  },
+  "homepage": "https://github.com/latif-essam/QGeneartor#readme"
+}
